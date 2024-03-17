@@ -7,10 +7,10 @@ int main(int argc, char *argv[])
 
     SocketManager socket;
 
-    while(1)
-    {
-        QCoreApplication::processEvents();
-   //     QThread::msleep(1);
-    }
+//    while(1)
+//    {
+//        QCoreApplication::processEvents();
+//   //     QThread::msleep(1);
+//    }
     return a.exec();
 }

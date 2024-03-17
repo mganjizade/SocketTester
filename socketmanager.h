@@ -87,7 +87,7 @@ public slots:
                 ushort len = (data.at(index++) & 0xff);
                 ushort hlen = (data.at(index) << 8);
                 len |= hlen;
-                if(len > 3220)
+                if(len > 3320)
                 {
                     it = result + sizeof(pattern) - 1;
                     break;

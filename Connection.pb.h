@@ -1452,26 +1452,26 @@ class PSDDataRdyDOUBLE PROTOBUF_FINAL :
     kTypeFieldNumber = 1,
     kSizeFieldNumber = 2,
   };
-  // repeated double PsdData = 3;
+  // repeated float PsdData = 3;
   int psddata_size() const;
   private:
   int _internal_psddata_size() const;
   public:
   void clear_psddata();
   private:
-  double _internal_psddata(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >&
+  float _internal_psddata(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >&
       _internal_psddata() const;
-  void _internal_add_psddata(double value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >*
+  void _internal_add_psddata(float value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >*
       _internal_mutable_psddata();
   public:
-  double psddata(int index) const;
-  void set_psddata(int index, double value);
-  void add_psddata(double value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >&
+  float psddata(int index) const;
+  void set_psddata(int index, float value);
+  void add_psddata(float value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >&
       psddata() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >*
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >*
       mutable_psddata();
 
   // string type = 1;
@@ -1515,7 +1515,7 @@ class PSDDataRdyDOUBLE PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< double > psddata_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< float > psddata_;
   mutable std::atomic<int> _psddata_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
   ::PROTOBUF_NAMESPACE_ID::int32 size_;
@@ -1803,26 +1803,26 @@ class DOADataRdydouble PROTOBUF_FINAL :
     kTypeFieldNumber = 1,
     kSizeFieldNumber = 2,
   };
-  // repeated double DOAData = 3;
+  // repeated float DOAData = 3;
   int doadata_size() const;
   private:
   int _internal_doadata_size() const;
   public:
   void clear_doadata();
   private:
-  double _internal_doadata(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >&
+  float _internal_doadata(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >&
       _internal_doadata() const;
-  void _internal_add_doadata(double value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >*
+  void _internal_add_doadata(float value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >*
       _internal_mutable_doadata();
   public:
-  double doadata(int index) const;
-  void set_doadata(int index, double value);
-  void add_doadata(double value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >&
+  float doadata(int index) const;
+  void set_doadata(int index, float value);
+  void add_doadata(float value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >&
       doadata() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >*
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >*
       mutable_doadata();
 
   // string type = 1;
@@ -1866,7 +1866,7 @@ class DOADataRdydouble PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< double > doadata_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< float > doadata_;
   mutable std::atomic<int> _doadata_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr type_;
   ::PROTOBUF_NAMESPACE_ID::int32 size_;
@@ -4308,7 +4308,7 @@ inline void PSDDataRdyDOUBLE::set_size(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:PSDDataRdyDOUBLE.size)
 }
 
-// repeated double PsdData = 3;
+// repeated float PsdData = 3;
 inline int PSDDataRdyDOUBLE::_internal_psddata_size() const {
   return psddata_.size();
 }
@@ -4318,38 +4318,38 @@ inline int PSDDataRdyDOUBLE::psddata_size() const {
 inline void PSDDataRdyDOUBLE::clear_psddata() {
   psddata_.Clear();
 }
-inline double PSDDataRdyDOUBLE::_internal_psddata(int index) const {
+inline float PSDDataRdyDOUBLE::_internal_psddata(int index) const {
   return psddata_.Get(index);
 }
-inline double PSDDataRdyDOUBLE::psddata(int index) const {
+inline float PSDDataRdyDOUBLE::psddata(int index) const {
   // @@protoc_insertion_point(field_get:PSDDataRdyDOUBLE.PsdData)
   return _internal_psddata(index);
 }
-inline void PSDDataRdyDOUBLE::set_psddata(int index, double value) {
+inline void PSDDataRdyDOUBLE::set_psddata(int index, float value) {
   psddata_.Set(index, value);
   // @@protoc_insertion_point(field_set:PSDDataRdyDOUBLE.PsdData)
 }
-inline void PSDDataRdyDOUBLE::_internal_add_psddata(double value) {
+inline void PSDDataRdyDOUBLE::_internal_add_psddata(float value) {
   psddata_.Add(value);
 }
-inline void PSDDataRdyDOUBLE::add_psddata(double value) {
+inline void PSDDataRdyDOUBLE::add_psddata(float value) {
   _internal_add_psddata(value);
   // @@protoc_insertion_point(field_add:PSDDataRdyDOUBLE.PsdData)
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >&
 PSDDataRdyDOUBLE::_internal_psddata() const {
   return psddata_;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >&
 PSDDataRdyDOUBLE::psddata() const {
   // @@protoc_insertion_point(field_list:PSDDataRdyDOUBLE.PsdData)
   return _internal_psddata();
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >*
 PSDDataRdyDOUBLE::_internal_mutable_psddata() {
   return &psddata_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >*
 PSDDataRdyDOUBLE::mutable_psddata() {
   // @@protoc_insertion_point(field_mutable_list:PSDDataRdyDOUBLE.PsdData)
   return _internal_mutable_psddata();
@@ -4531,7 +4531,7 @@ inline void DOADataRdydouble::set_size(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:DOADataRdydouble.size)
 }
 
-// repeated double DOAData = 3;
+// repeated float DOAData = 3;
 inline int DOADataRdydouble::_internal_doadata_size() const {
   return doadata_.size();
 }
@@ -4541,38 +4541,38 @@ inline int DOADataRdydouble::doadata_size() const {
 inline void DOADataRdydouble::clear_doadata() {
   doadata_.Clear();
 }
-inline double DOADataRdydouble::_internal_doadata(int index) const {
+inline float DOADataRdydouble::_internal_doadata(int index) const {
   return doadata_.Get(index);
 }
-inline double DOADataRdydouble::doadata(int index) const {
+inline float DOADataRdydouble::doadata(int index) const {
   // @@protoc_insertion_point(field_get:DOADataRdydouble.DOAData)
   return _internal_doadata(index);
 }
-inline void DOADataRdydouble::set_doadata(int index, double value) {
+inline void DOADataRdydouble::set_doadata(int index, float value) {
   doadata_.Set(index, value);
   // @@protoc_insertion_point(field_set:DOADataRdydouble.DOAData)
 }
-inline void DOADataRdydouble::_internal_add_doadata(double value) {
+inline void DOADataRdydouble::_internal_add_doadata(float value) {
   doadata_.Add(value);
 }
-inline void DOADataRdydouble::add_doadata(double value) {
+inline void DOADataRdydouble::add_doadata(float value) {
   _internal_add_doadata(value);
   // @@protoc_insertion_point(field_add:DOADataRdydouble.DOAData)
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >&
 DOADataRdydouble::_internal_doadata() const {
   return doadata_;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >&
 DOADataRdydouble::doadata() const {
   // @@protoc_insertion_point(field_list:DOADataRdydouble.DOAData)
   return _internal_doadata();
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >*
 DOADataRdydouble::_internal_mutable_doadata() {
   return &doadata_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< double >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< float >*
 DOADataRdydouble::mutable_doadata() {
   // @@protoc_insertion_point(field_mutable_list:DOADataRdydouble.DOAData)
   return _internal_mutable_doadata();

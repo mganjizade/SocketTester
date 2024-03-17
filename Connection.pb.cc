@@ -572,10 +572,10 @@ const char descriptor_table_protodef_Connection_2eproto[] PROTOBUF_SECTION_VARIA
   "50KHz\020\r\022\020\n\014Filter_Count\020\016\"\031\n\tFrequency\022\014"
   "\n\004freq\030\001 \001(\001\"\030\n\tThreshold\022\013\n\003thr\030\001 \001(\001\"\?"
   "\n\020PSDDataRdyDOUBLE\022\014\n\004type\030\001 \001(\t\022\014\n\004size"
-  "\030\002 \001(\005\022\017\n\007PsdData\030\003 \003(\001\".\n\rPSDDataRdyINT"
+  "\030\002 \001(\005\022\017\n\007PsdData\030\003 \003(\002\".\n\rPSDDataRdyINT"
   "\022\014\n\004size\030\001 \001(\005\022\017\n\007PsdData\030\002 \003(\005\"\?\n\020DOADa"
   "taRdydouble\022\014\n\004type\030\001 \001(\t\022\014\n\004size\030\002 \001(\005\022"
-  "\017\n\007DOAData\030\003 \003(\001\"0\n\017DOADataRdyshort\022\014\n\004s"
+  "\017\n\007DOAData\030\003 \003(\002\"0\n\017DOADataRdyshort\022\014\n\004s"
   "ize\030\001 \001(\005\022\017\n\007DoaData\030\002 \003(\005\"/\n\014AudioDataR"
   "dy\022\014\n\004size\030\001 \001(\005\022\021\n\tAudioData\030\002 \003(\014\"\033\n\nA"
   "udioState\022\r\n\005audio\030\001 \001(\010\"Q\n\014GPSParameter"
@@ -2077,14 +2077,14 @@ const char* PSDDataRdyDOUBLE::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated double PsdData = 3;
+      // repeated float PsdData = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedDoubleParser(_internal_mutable_psddata(), ptr, ctx);
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedFloatParser(_internal_mutable_psddata(), ptr, ctx);
           CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25) {
-          _internal_add_psddata(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-          ptr += sizeof(double);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 29) {
+          _internal_add_psddata(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr));
+          ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
       default: {
@@ -2131,7 +2131,7 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_size(), target);
   }
 
-  // repeated double PsdData = 3;
+  // repeated float PsdData = 3;
   if (this->_internal_psddata_size() > 0) {
     target = stream->WriteFixedPacked(3, _internal_psddata(), target);
   }
@@ -2152,10 +2152,10 @@ size_t PSDDataRdyDOUBLE::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated double PsdData = 3;
+  // repeated float PsdData = 3;
   {
     unsigned int count = static_cast<unsigned int>(this->_internal_psddata_size());
-    size_t data_size = 8UL * count;
+    size_t data_size = 4UL * count;
     if (data_size > 0) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -2584,14 +2584,14 @@ const char* DOADataRdydouble::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated double DOAData = 3;
+      // repeated float DOAData = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedDoubleParser(_internal_mutable_doadata(), ptr, ctx);
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedFloatParser(_internal_mutable_doadata(), ptr, ctx);
           CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25) {
-          _internal_add_doadata(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-          ptr += sizeof(double);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 29) {
+          _internal_add_doadata(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr));
+          ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
       default: {
@@ -2638,7 +2638,7 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_size(), target);
   }
 
-  // repeated double DOAData = 3;
+  // repeated float DOAData = 3;
   if (this->_internal_doadata_size() > 0) {
     target = stream->WriteFixedPacked(3, _internal_doadata(), target);
   }
@@ -2659,10 +2659,10 @@ size_t DOADataRdydouble::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated double DOAData = 3;
+  // repeated float DOAData = 3;
   {
     unsigned int count = static_cast<unsigned int>(this->_internal_doadata_size());
-    size_t data_size = 8UL * count;
+    size_t data_size = 4UL * count;
     if (data_size > 0) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
